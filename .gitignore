@@ -2,6 +2,8 @@
 diagrams/
 
 .DS_store
+.vscode/
+*/node_modules
 
 # Logs
 logs

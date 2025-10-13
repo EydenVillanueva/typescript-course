@@ -4,7 +4,7 @@ diagrams/
 .DS_store
 .vscode/
 */node_modules
-
+.parcel-*
 # Logs
 logs
 *.log

@@ -1,6 +1,7 @@
 # course assets
 diagrams/
 ignore.txt
+build/
 
 .DS_store
 .vscode/

@@ -1,7 +1,10 @@
 import type { ISortable } from './ISortable.js';
+import { Sorter } from './Sorter.js';
 
-export class CharatersCollection implements ISortable {
-  constructor(public data: string) {}
+export class CharatersCollection extends Sorter implements ISortable {
+  constructor(public data: string) {
+    super();
+  }
 
   get length(): number {
     return this.data.length;

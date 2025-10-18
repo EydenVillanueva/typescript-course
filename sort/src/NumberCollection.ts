@@ -1,7 +1,10 @@
 import type { ISortable } from './ISortable.js';
+import { Sorter } from './Sorter.js';
 
-export class NumberCollection implements ISortable {
-  constructor(public data: number[]) {}
+export class NumberCollection extends Sorter implements ISortable {
+  constructor(public data: number[]) {
+    super();
+  }
 
   compare(leftIndex: number, rightIndex: number): boolean {
     if (this.data === undefined) throw new Error('Data is undefined');

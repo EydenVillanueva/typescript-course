@@ -1,4 +1,5 @@
 import type { ISortable } from './ISortable.js';
+import { Sorter } from './Sorter.js';
 
 export class Node {
   public next: Node | null = null;
@@ -10,7 +11,7 @@ export class Node {
   }
 }
 
-export class LinkedList implements ISortable {
+export class LinkedList extends Sorter implements ISortable {
   head: Node | null = null;
 
   add(data: number): void {
